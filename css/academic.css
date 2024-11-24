@@ -1,0 +1,57 @@
+/* Main Section */
+main {
+    padding: 20px;
+}
+
+.academics-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Section */
+.academics-header h2 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+.academics-header p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Section Styling */
+.high-school-section,
+.senior-high-school-section {
+    margin-bottom: 30px;
+}
+
+.section-header {
+    font-size: 22px;
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+/* Program Card Styles */
+.program-card {
+    background-color: #ecf0f1;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.program-card h3 {
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+.program-card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.program-card ul li {
+    margin: 5px 0;
+}

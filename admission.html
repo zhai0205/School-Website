@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions</title>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/admission.css">
+</head>
+<body>
+    <header>
+        <h1>Admissions</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li class="dropdown">
+                    <a href="academic.html#programs" class="dropbtn">Academics</a>
+                    <div class="dropdown-content">
+                        <a href="academic.html#highschool">High School Programs</a>
+                        <a href="academic.html#seniorhigh">Senior High School Programs</a>
+                        <a href="academic.html#programs">View All Programs</a>
+                    </div>
+                </li>
+                <li><a href="admission.html">Admissions</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="senior-high">
+            <h3 class="section-header">Admission Requirments</h3>
+            <div class="program">
+                <h3>Admission Requirements for Junior High School</h3>
+                <ul>
+                    <li>Birth Certificate</li>
+                    <li>Report Card/Transcript of Records(Form 137 or Form)</li>
+                    <li>Certificate of Good Moral Character</li>
+                </ul>
+            </div>
+
+            <div class="program">
+                <h3>Admission Requirments for Senior High School</h3>
+                <ul>
+                    <li>Birth Certificate</li>
+                    <li>Report Card/Transcript of Records(Form 137 or Form)</li>
+                    <li>Certificate of Good Moral Character</li>
+                    <li>National Career Assessment Examination (NCAE) Results</li>
+
+                </ul>
+            </div>
+
+            <div class="program">
+                <h3> For Transferees:</h3>
+                <ul>
+                    <li>Certificate of Transfer/Recommendation Letter</li>
+                    <li>Transcript of Records (Form 137)</li>
+                </ul>
+            </div>
+    </div>
+
+    <div class="faq-container">
+        <div class="faq-header">
+            <h1>Frequently Asked Questions</h1>
+            <p>Find answers to common inquiries about our school and admission process.</p>
+        </div>
+
+        <!-- FAQ Item 1 -->
+        <div class="faq-item">
+            <div class="faq-question">
+                What are the requirements for Senior High School admission?
+            </div>
+            <div class="faq-answer">
+                <p>Requirements include Form 138 (Report Card), Birth Certificate, Certificate of Good Moral Character, NCAE results, and ID photos. For the complete list, refer to our Admissions page.</p>
+            </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="faq-item">
+            <div class="faq-question">
+                Do you offer scholarships for Senior High School students?
+            </div>
+            <div class="faq-answer">
+                <p>Yes, we offer scholarships based on academic performance, sports, and other achievements. For more details, visit the Scholarships section on our website.</p>
+            </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="faq-item">
+            <div class="faq-question">
+                What tracks are available for Senior High School?
+            </div>
+            <div class="faq-answer">
+                <p>We offer Academic Tracks (STEM, ABM, HUMSS, GAS) and Technical-Vocational-Livelihood (TVL) Tracks, as well as Sports and Arts & Design Tracks.</p>
+            </div>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div class="faq-item">
+            <div class="faq-question">
+                Is there an entrance exam for Senior High School applicants?
+            </div>
+            <div class="faq-answer">
+                <p>Yes, applicants are required to take an entrance exam. Exam schedules are announced during the application period.</p>
+            </div>
+        </div>
+
+        <!-- FAQ Item 5 -->
+        <div class="faq-item">
+            <div class="faq-question">
+                Can transferees apply mid-year?
+            </div>
+            <div class="faq-answer">
+                <p>Yes, we accept transferees subject to the availability of slots and submission of the necessary documents.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to toggle FAQ answers
+        const questions = document.querySelectorAll('.faq-question');
+
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+
+                // Toggle visibility of the answer
+                answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
+            });
+        });
+    </script>
+    </main>
+    <footer>
+        <p>&copy; 2024 Bagumbayan National High School. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Website - Home</title>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Bagumbayan National High School</h1>
+
+         <!-- Banner Section -->
+         
+
+         <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li class="dropdown">
+                    <a href="academic.html#programs" class="dropbtn">Academics</a>
+                    <div class="dropdown-content">
+                        <a href="academic.html#highschool">High School Programs</a>
+                        <a href="academic.html#seniorhigh">Senior High School Programs</a>
+                        <a href="academic.html#programs">View All Programs</a>
+                    </div>
+                </li>
+                <li><a href="admission.html">Admissions</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        
+    </header>
+    <main>
+
+        <div class="carousel-container">
+            <div class="carousel" id="carousel">
+            <img src="images/banner.png" alt="Featured spot 1">
+            <img src="images/banner2.png" alt="Featured spot 2">
+            <img src="images/banner3.png" alt="Featured spot 3">
+            </div>
+            <!-- Arrows for manual navigation -->
+            <button class="carousel-arrow left" onclick="moveSlide(-
+            1)">&#10094;</button>
+            <button class="carousel-arrow right"
+            onclick="moveSlide(1)">&#10095;</button>
+            </div>
+            <!-- Dots for navigation -->
+            <div class="carousel-dots">
+            <span class="dot active-dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+        <div class="grid">
+            <!-- Picture slot 1 -->
+                
+
+                <div class="spot">
+                    <img src="images/slot3.png" alt="Tourist Spot 1">
+                    <h3>Achivement</h3>
+                    <p>Congratulations to our BNHS Teachers, Ma'am Annie Bisnar, Ma'am Jennifer Dignadice and Ma'am Edna S. Olario for being included in the different categories of the  Over - all Top 5 winners of Gawad Teodora Alonzo 2023: 5th National Storybook Writing Competition - Division Level. Your BNHS family is very proud of you! </p>
+                </div>
+
+                <div class="spot">
+                    <img src="images/slot1.png" alt="Tourist Spot 1">
+                    <h3>Enrollment</h3>
+                    <p>Good day! All BNHS students promoted for S.Y. 2023–2024 are automatically enrolled. Incoming Grade 7, transferees, ALS, OHSP, and Balik-Aral (Grades 8–10) must follow the enrollment schedule from 8:00 AM to 5:00 PM. Students who completed online enrollment for Grades 8–10 do not need to come. However, Grade 7 students (including those who did early registration or online enrollment) must attend with a parent/guardian for a reading test.</p>
+                </div>
+                
+                <div class="spot">
+                    <img src="images/slot2.png" alt="Tourist Spot 1">
+                    <h3>Achivement</h3>
+                    <p>Congratulations to our BNHS Teachers, Ma'am Annie Bisnar, Ma'am Jennifer Dignadice and Ma'am Edna S. Olario for being included in the different categories of the  Over - all Top 5 winners of Gawad Teodora Alonzo 2023: 5th National Storybook Writing Competition - Division Level. Your BNHS family is very proud of you! </p>
+                </div>
+
+                <div class="spot">
+                    <img src="images/slot4.png" alt="Tourist Spot 1">
+                    <h3>Achivement</h3>
+                    <p>Congratulations to our BNHS Teachers, Ma'am Annie Bisnar, Ma'am Jennifer Dignadice and Ma'am Edna S. Olario for being included in the different categories of the  Over - all Top 5 winners of Gawad Teodora Alonzo 2023: 5th National Storybook Writing Competition - Division Level. Your BNHS family is very proud of you! </p>
+                </div>
+
+
+        </div>
+
+        <div class="map">
+            <h2>Find Us</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.9345119878316!2d121.054451!3d14.4742726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cf9fb9cb590d%3A0xd6c011142faf1225!2sBagumbayan%20National%20High%20School!5e0!3m2!1sen!2sph!4v1698102733217!5m2!1sen!2sph" 
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+
+    </main>
+
+    <script>
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.carousel img');
+        const dots = document.querySelectorAll('.dot');
+        // Move slide function
+        function moveSlide(n) {
+        currentIndex += n;
+        if (currentIndex >= slides.length) currentIndex = 0;
+        if (currentIndex < 0) currentIndex = slides.length - 1;
+        showSlide(currentIndex);
+        }
+        // Show specific slide
+        function currentSlide(n) {
+        currentIndex = n - 1;
+        showSlide(currentIndex);
+        }
+        // Display the current slide and active dot
+        function showSlide(index) {
+        const carousel = document.getElementById('carousel');
+        const width = slides[0].clientWidth;
+        carousel.style.transform = `translateX(-${width * index}px)`;
+        dots.forEach(dot => dot.classList.remove('active-dot'));
+        dots[index].classList.add('active-dot');
+        }
+        // Auto-slide every 3 seconds
+        setInterval(() => {
+        moveSlide(1);
+        }, 3000);
+        </script>
+    <footer>
+        <p>&copy; 2024 Bagumbayan National High School. All rights reserved.</p>
+    </footer>
+</body>
+</html>

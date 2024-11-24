@@ -1,0 +1,141 @@
+/* General Styling for All Pages */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #002050;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #004080;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Style for Navigation Bar */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+nav li {
+    position: relative;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+/* Dropdown Container */
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    cursor: pointer;
+}
+
+/* Dropdown Menu Styling */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-align: left;
+}
+
+/* Show the dropdown when hovering */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #575757;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn {
+    background-color: #0044cc;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.dropbtn:hover {
+    background-color: #003399;
+}
